@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>♻️ Link Networks</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000a0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a2e;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 4em;
+      }
+      .toggle-btn {
+        font-size: 1.5em;
+        padding: 12px 24px;
+      }
+      #motto {
+        font-size: 1.8em;
+      }
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: #1a1a2e;
+      color: #ffffff;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(26, 26, 46, 0.6);
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background: #000000;
+    }
+
+    #motto {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      background-color: #2c3e50;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #66ccff;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    section {
+      background: #34495e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(44, 62, 80, 0.15);
+    }
+
+    h2, h3 {
+      color: #66ccff;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #cccccc;
+      background-color: #00070d;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+
+    .responsive-img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 15px auto 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>♻️ Recycling Network</h1>
+    <p class="highlight" id="motto">Recycle. Reward. Repeat.</p>
+    <button class="toggle-btn" onclick="toggleLanguage()">Română / English</button>
+  </header>
+
+  <div class="container">
+    <!-- English -->
+    <div id="en" class="lang active">
+      <section>
+        <h2>🎯 Objective</h2>
+        <p>Allow users to scan bottles at partner locations (Bars, Festivals, Restaurants) and instantly receive vouchers.</p>
+        <img src="images/1000005478.jpg" alt="Scan Reward Pay" class="responsive-img" />
+      </section>
+      <section>
+        <h2>📱 How It Works</h2>
+        <ul>
+          <li>Scan the Bottle: User opens the app and scans the QR code on the bottles..</li>
+          <li>Instant Reward: ✅ “Voucher received: 0.5€”</li>
+          <li>Smart Payment: Users can pay directly at partner locations using wallet balance.</li>
+        </ul>
+        <img src="images/1000005282.jpg" alt="App Interface" class="responsive-img" />
+      </section>
+      <section>
+        <h2>🧾 Smart QR Codes</h2>
+        <ul>
+          <li>Can only be scanned once</li>
+          <li>Enables full traceability</li>
+          <li>Prevents fraud</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🗄️ Centralized Database</h2>
+        <ul>
+          <li>Bottle type: glass / PET / aluminum</li>
+          <li>Production date</li>
+          <li>Scan location & date</li>
+          <li>Status: active / recycled / collected</li>
+        </ul>
+      </section>
+      <section>
+        <h2>📦 Smart Collection System</h2>
+        <ul>
+          <li>Partner locations store scanned bottles</li>
+          <li>Automatic route triggered when the minimum number of bottles is reached</li>
+          <li>Collected status updated automatically</li>
+        </ul>
+      </section>
+      <section>
+        <h2>📊 Benefits</h2>
+        <ul>
+          <li>🎁 Real user incentives</li>
+          <li>🌱 Higher recycling at events</li>
+          <li>📈 Live analytics & ESG reports</li>
+          <li>🔐 Full traceability</li>
+          <li>💳 Wallet payments supported</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🚀 Ideal Locations</h2>
+        <ul>
+          <li>Music festivals</li>
+          <li>Urban bars & clubs</li>
+          <li>Summer terraces</li>
+          <li>Restaurants</li>
+          <li>Corporate events & green campaigns</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🌍 Summary</h2>
+        <p><strong>♻️ Recycling Network. Recycle. Reward. Repeat.</strong></p>
+      </section>
+    </div>
+
+    <!-- Romanian -->
+    <div id="ro" class="lang">
+      <section>
+        <h2>🎯 Obiectiv</h2>
+        <p>Permite utilizatorilor să scaneze sticle în locații partenere (baruri, festivaluri, restaurante) și să primească instant vouchere.</p>
+        <img src="images/1000005478.jpg" alt="Scanare, Recompensă, Plată" class="responsive-img" />
+      </section>
+      <section>
+        <h2>📱 Cum Funcționează</h2>
+        <ul>
+          <li>Scanează sticla: utilizatorul deschide aplicația și scanează codul QR de pe sticle.</li>
+          <li>Recompensă instant: ✅ “Voucher primit: 0.5 lei”</li>
+          <li>Plată inteligentă: utilizatorii pot plăti cu soldul din portofelul digital.</li>
+        </ul>
+        <img src="images/1000005282.jpg" alt="Interfață aplicație" class="responsive-img" />
+      </section>
+      <section>
+        <h2>🧾 Coduri QR Inteligente</h2>
+        <ul>
+          <li>Se poate scana o singură dată</li>
+          <li>Permite trasabilitate completă</li>
+          <li>Previne frauda</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🗄️ Bază de Date Centralizată</h2>
+        <ul>
+          <li>Tip sticlă: sticlă / PET / aluminiu</li>
+          <li>Data producției</li>
+          <li>Locație & dată scanare</li>
+          <li>Status: activ / reciclat / colectat</li>
+        </ul>
+      </section>
+      <section>
+        <h2>📦 Sistem de Colectare Inteligent</h2>
+        <ul>
+          <li>Locațiile partenere stochează sticlele scanate</li>
+          <li>Rută automată la atingerea numărului minim de sticle</li>
+          <li>Statusul se actualizează la „colectat”</li>
+        </ul>
+      </section>
+      <section>
+        <h2>📊 Beneficii</h2>
+        <ul>
+          <li>🎁 Recompense reale pentru utilizatori</li>
+          <li>🌱 Rate mai mari de reciclare la evenimente</li>
+          <li>📈 Rapoarte ESG și analize live</li>
+          <li>🔐 Trasabilitate completă</li>
+          <li>💳 Suport pentru plăți din portofel</li>
+        </ul>
+      </section>
+      <section>
+        <h2>🚀 Locații Ideale</h2>
+        <ul>
+          <li>Festivaluri</li>
+          <li>Baruri urbane și cluburi</li>
+          <li>Terase de vară</li>
+          <li>Restaurante</li>
+          <li>Evenimente corporate și campanii verzi</li>
+        </ul>
+      </section>
+      <h2>🌍 Rezumat</h2>
+      <p><strong>♻️ Recycling Network – Reciclează. Recompensează. Repetă.</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Recycling Network. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      const en = document.getElementById("en");
+      const ro = document.getElementById("ro");
+      const motto = document.getElementById("motto");
+      if (en.classList.contains("active")) {
+        en.classList.remove("active");
+        ro.classList.add("active");
+        motto.innerText = "Reciclează. Recompensează. Repetă.";
+      } else {
+        ro.classList.remove("active");
+        en.classList.add("active");
+        motto.innerText = "Recycle. Reward. Repeat.";
+      }
+    }
+  </script>
+</body>
+</html>
